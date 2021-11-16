@@ -59,7 +59,7 @@
           <mat-icon mat-list-icon>
             add_shopping_cart
           </mat-icon>
-          <p mat-line> Order </p>
+          <a routerLink="/order"> <p mat-line> Order </p> </a>
         </a>
 
         <a mat-list-item>
@@ -84,7 +84,8 @@
     <mat-sidenav-content class="sidenav-content">
       
       <!-- Main content -->
-      
+      <router-outlet></router-outlet>
+     <app-order></app-order>
       <!-- ------------ -->
       
       <div class="bottom-spacer"></div>

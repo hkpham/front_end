@@ -16,11 +16,21 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
 import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { OrderComponent } from './order/order.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+import { NavComponent } from './nav/nav.component';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
-    OrderComponent
+    OrderComponent,
+    LoginComponent,
+    NavComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +47,8 @@ MatFormFieldModule,
 MatInputModule,
 MatCardModule,
 MatChipsModule,
-FlexLayoutModule
+FlexLayoutModule,
+FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,15 @@
-<p>order works!</p>
+<div class="row">
+    <h1>Your Orders: </h1>
+<div class="col-md-4" *ngFor="let order of orders">
+    
+  
+    <mat-card [style.min-width]="'100px'">
+      
+
+            <mat-card-title>{{order.product}}</mat-card-title>
+      
+    </mat-card>
+</div>
+</div>
+
+
